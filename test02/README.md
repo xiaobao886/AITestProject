@@ -6,8 +6,8 @@
 
 ## 项目结构
 
-```text
-D:\AITestProject\test02\
+```
+test02\
 ├── main.py                 # 程序入口，启动 QApplication
 ├── image_utils.py          # OpenCV 与 PyQt5 图像格式互转工具
 ├── algorithms.py           # 颜色阈值分割 & 灰度阈值分割算法实现
