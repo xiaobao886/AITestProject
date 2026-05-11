@@ -6,7 +6,7 @@
 
 ## 项目结构
 
-`
+```text
 D:\AITestProject\test02\
 ├── main.py                 # 程序入口，启动 QApplication
 ├── image_utils.py          # OpenCV 与 PyQt5 图像格式互转工具
@@ -23,7 +23,7 @@ D:\AITestProject\test02\
 │   └── ImageTool.exe       # 打包后的可执行文件（~86MB）
 ├── build/                  # PyInstaller 构建临时目录
 └── ImageTool.spec          # PyInstaller 打包配置
-`
+```
 
 ---
 
@@ -105,18 +105,18 @@ D:\AITestProject\test02\
 
 **Python 依赖（requirements.txt）：**
 
-`
+```text
 pyqt5
 opencv-python
 numpy
 pyinstaller
-`
+```
 
 **安装依赖：**
 
-`
+```bash
 pip install -r requirements.txt
-`
+```
 
 ---
 
@@ -124,31 +124,31 @@ pip install -r requirements.txt
 
 ### 方式一：直接运行 EXE（推荐普通用户）
 
-1. 找到 `D:\AITestProject\test02\dist\ImageTool.exe`
+1. 找到 `D:\AITestProject\test02\dist\ImageTool.exe```
 2. 双击运行
 3. 选择一个算法开始处理图像
 
 ### 方式二：源码运行（开发者调试）
 
-`
+```bash
 cd D:\AITestProject\test02
 python main.py
-`
+```
 
 ### 方式三：重新打包 EXE
 
 **使用一键脚本：**
 
-`
+```bash
 cd D:\AITestProject\test02
 build_exe.bat
-`
+```
 
 **或手动执行：**
 
-`
+```bash
 pyinstaller --onefile --windowed --add-data "resources;resources" --name "ImageTool" --clean main.py
-`
+```
 
 打包完成后，EXE 位于 `dist/ImageTool.exe`。
 
